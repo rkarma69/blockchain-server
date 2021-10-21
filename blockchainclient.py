@@ -9,8 +9,8 @@ submit = st.sidebar.button("Mining and Creating a Blockchain")
 
 
 if submit:
-    mining = requests.get("http://192.168.219.102:5000/mine_block")
-    chain = requests.get("http://192.168.219.102:5000/get_chain")
+    mining = requests.get("http://112.157.171.74:5000/mine_block")
+    chain = requests.get("http://112.157.171.74:5000/get_chain")
     temp_mining=mining.text
     temp_chain=chain.text
 else:
